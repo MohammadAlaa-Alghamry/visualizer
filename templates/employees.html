@@ -1,0 +1,25 @@
+{% extends "newlayout.html" %}
+
+{% block title %}
+    Employees' Loans
+{% endblock %}
+
+{% block main %}        
+
+    <script src="/static/scripts/vchart.js"></script>
+    <link href="/static/styles/vChartStyle.css" rel="stylesheet">
+
+    <script>
+        
+        // get values from flask
+        var values = '{{ xvalues|tojson|safe }}';
+        console.log('xvalues:', values);
+        console.log('parsed:', JSON.parse(values));
+
+        var chart_info = { url: "/employees", acc_name: "Employees' Loans" };
+        // call visualize function to draw the graph
+        vchart(values, chart_info);
+
+    </script>
+
+{% endblock %}

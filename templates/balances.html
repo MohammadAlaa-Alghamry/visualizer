@@ -1,0 +1,22 @@
+{% extends "newlayout.html" %}
+
+{% block title %}
+    Bank Balances
+{% endblock %}
+
+{% block main %}
+
+    <link href="/static/styles/vChartStyle.css" rel="stylesheet">
+
+    <script>
+        // get values from flask
+        var values = '{{ xvalues|tojson|safe }}';
+        console.log('xvalues:', values);
+        console.log('parsed:', JSON.parse(values));
+
+        var chart_info = { url: "/balances", acc_name: "Bank Balances" };
+        // call visualize function to draw the graph
+        vchart(values, chart_info);
+    </script>
+
+{% endblock %}

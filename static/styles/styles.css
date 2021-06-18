@@ -1,0 +1,82 @@
+body
+{
+    background-color: #151524;
+    background-color: #1c1c33;
+    background-color: white;
+    background-color: rgb(37, 37, 37);
+    color: tomato;
+    font-family: 'Cairo', sans-serif;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 4em;
+    /* float: left; */
+    width: 50%;
+    margin-left: 1em;
+    margin-top: 0;
+    color: #1b61c2;
+    text-align: left;
+}
+
+.msg-alert {
+    width: 40%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.7em;
+    font-size: 2em;
+    color: rgb(209, 8, 8);
+}
+
+#chart-title {
+    text-decoration: none;
+    float: right;
+    width: 35%;
+    text-align: right;
+    margin-top: 0.3em;
+    margin-right: 1.5em;
+    margin-bottom: 0;
+    font-size: 3.3em;
+    color: rgb(219, 43, 43);
+    color: #1b61c2;
+}
+
+#voyage {
+    font-style: italic;
+    color: #f5b82e;
+}
+
+#tours {
+    font-size: 0.25em;
+}
+
+.chart-title {
+    text-align: right;
+    /* margin-right: 1.5em; */
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.nav-list {
+    font-size: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    text-align: right;
+}
+
+.navbar {
+
+}
+
+.navbar li {
+
+}
+
+li a {
+
+}

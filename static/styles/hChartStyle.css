@@ -1,0 +1,144 @@
+body {
+    /* background-color: white; */
+}
+
+.h-charts-container {
+    display: block;
+    /* margin-right: auto;
+    margin-left: auto;
+    padding: 2em; */
+    /* margin-top: 2em; */
+    /* padding-top: 2em;
+    padding-left: 1em; */
+    width: 100%;
+    background-color: white;
+    background-color: rgb(37, 37, 37);
+}
+
+.info {
+    font-size: 1em;
+    /* color: green; */
+    text-align: right;
+    width: 100%;
+    float: left;
+    /* margin-right: 5em; */
+    margin-top: 0;
+    margin-bottom: 1em;
+    fill: rgb(95, 57, 0);
+    padding: 0;
+}
+
+.info .chart-debit-total {
+    color: #15153d;
+    color: #090988;
+    color: rgb(228, 0, 0);
+    color: rgb(219, 43, 43);
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.info .chart-credit-total {
+    color: #090988;
+    color: black;
+    color: goldenrod;
+    color: #1b61c2;
+    width: 50%;
+    float: left;
+    text-align: right;
+    font-size: 35px;
+    margin: 0;
+    padding: 0;
+}
+
+.info h1 {
+    padding: 0;
+    margin: 0;
+}
+
+.h-chart-ylabels {
+    font-size: 1.3em;
+    fill: #1c1c33;
+}
+
+.h-bars-debit {
+    fill: #1c1c33;
+    fill: rgb(255, 0, 0);
+    fill: rgb(255, 0, 85);
+    fill: rgb(219, 43, 43);
+    /* opacity: 0.7; */
+}
+
+.h-bars-credit {
+    fill: rgb(30, 38, 53, 1);
+    fill: black;
+    fill: #000036;
+    fill: rgb(30, 38, 53, 1);
+    opacity: 0.8;
+}
+
+.h-bars-val-labels {
+    fill: yellow;
+    fill: rgb(95, 57, 0);
+    fill: orangered;
+    fill: green;
+    fill: rgb(0, 71, 0);
+    fill: red;
+    fill: rgb(2, 0, 131);
+    fill: black;
+    /* stroke: black;
+    stroke: red; */
+    stroke-width: 0.5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.h-bars-pays-labels{
+    fill: black;
+    fill: rgb(2, 0, 131);
+    stroke-width: 0.5px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.h-bars-status-labels {
+    stroke-width: 0.5px;
+    font-size: 17px;
+    /* font-weight: bold; */
+}
+
+.h-chart-ylabels {
+    font-size: 15px;
+    fill: black;
+    fill: goldenrod;
+    /* font-weight: 500;
+    stroke: black;
+    stroke-width: 1px; */
+}
+
+.temp-rect {
+    opacity: 0.5;
+    fill: black;
+}
+
+.temp-text {
+    font-size: 1.7em;
+    font-weight: bold;
+    text-anchor: end;
+}
+
+#temp-text-acc_type {
+    font-size: 2em;
+}
+
+#temp-text-acc_name {
+    fill: goldenrod;
+}
+
+#temp-text-value {
+    /* fill: goldenrod; */
+    /* text-anchor: start; */
+}

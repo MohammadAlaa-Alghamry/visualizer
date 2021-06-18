@@ -1,0 +1,26 @@
+{% extends "newlayout.html" %}
+
+{% block title %}
+    Expenses Totals
+{% endblock %}
+
+{% block main %}
+
+    <link href="/static/styles/vChartStyle.css" rel="stylesheet">
+
+    <script>
+        // get values from flask
+        var values = '{{ xvalues|tojson|safe }}';
+        console.log('xvalues:', values);
+        console.log('parsed:', JSON.parse(values));
+
+        var en_chart_title = "Total Expenses: ";
+        var chart_info = { url: "/expenses", acc_name: "Expenses Totals" };
+        // call visualize function to draw the graph
+        vchart(values, chart_info);
+    </script>
+
+{% endblock %}
+
+
+

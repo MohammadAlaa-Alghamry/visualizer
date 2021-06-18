@@ -1,0 +1,104 @@
+.v-chart-container {
+    background-color: goldenrod;
+    background-color:#ffe600c0;
+    background-color:#7c7000cc;
+    background-color: #151524;
+    background-color: rgb(194, 194, 194);
+    background-color: rgb(37, 37, 37);
+    background-color: white;
+    padding-bottom: 1em;
+}
+
+.info {
+    font-size: 1em;
+    /* color: green; */
+    text-align: right;
+    width: 100%;
+    float: left;
+    /* margin-right: 5em; */
+    margin-top: 0;
+    margin-bottom: 0;
+    fill: rgb(95, 57, 0);
+}
+
+.info .chart-total {
+    color: #15153d;
+    color: #090988;
+    width: 50%;
+    float: right;
+    text-align: center;
+    font-size: 35px;
+    margin: 0;
+}
+
+.info h1 {
+    padding: 0;
+    margin: 0;
+}
+
+div .acc_name {
+    color: black;
+}
+
+.v-charts {
+    display: block;
+    margin-left: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    /* border: solid 1px black; */
+}
+
+.vbars {
+    fill: rgba(182, 0, 0, 0.7);
+    fill: rgb(219, 43, 43);
+    fill: #100057ef;
+    fill: #1b61c2;
+    fill: goldenrod;
+    fill: rgb(30, 38, 53);
+}
+
+.vebars{
+    fill: #1c1c33c2;
+    fill: rgb(0, 42, 119, 0.7);
+    fill: rgb(216, 21, 21);
+    fill: rgb(219, 43, 43, 0.9);
+}
+
+.vrbars {
+    fill: rgb(23, 136, 0);
+    fill: green;
+    fill: rgba(36, 45, 61, 0.7);
+    fill: #1b61c28a;
+    fill: rgba(2, 70, 0, 0.336);
+}
+
+.vbars-labels {
+    fill: green;
+    fill: orangered;
+    fill: rgb(2, 0, 131);
+    fill: rgb(95, 57, 0);
+    fill: yellow;
+    fill: rgba(255, 0, 0, 0.39);
+    fill: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.x_labels {
+    font-family: 'Cairo', sans-serif;
+    color: goldenrod;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+
+.y_labels {
+    font-family: 'Cairo', sans-serif;
+    color: yellow;
+    color: goldenrod;
+    color: black;
+    font-size: 21px;
+    font-weight: 500;
+}

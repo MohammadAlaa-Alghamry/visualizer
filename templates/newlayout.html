@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+        <!-- D3.js -->
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+        <script src="/static/scripts/d3.js"></script>
+
+        <!-- Stylesheets -->
+        <link href="/static/styles/chartStyle.css" rel="stylesheet">
+        <link href="/static/styles/styles.css" rel="stylesheet">
+
+        <!-- get font from google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet">
+
+        <!-- title and icon -->
+        <link href="/static/under_construction.png" rel="icon">
+
+        <!-- scripts -->
+
+        <!-- load charts js file -->
+        <script src="/static/scripts/vcharts.js"></script>
+        <script src="/static/scripts/h_chart.js"></script>
+
+        <!-- page tab title -->
+        <title>Image Voyage Tours: {% block title %}{% endblock %}</title>
+        
+    </head>
+
+    <body>
+
+        <a class="logo" href="/">Business<span id="voyage">Logo</span><span id="tours">description</span id=></a>
+        <a id="chart-title"></a>
+
+        <!-- <nav>
+            <div>
+                {% if session.user_id %}
+                    <ul>
+                    </ul>
+                    <ul>
+                        <li><a href="/logout">Log Out</a></li>
+                    </ul>
+                    {% else %}
+                    <ul class="navbar">
+                        <li><a href="/accounts">Accounts</a></li>
+                        <li><a href="/plot">Plot</a></li>
+                        <li><a href="/register">Register</a></li>
+                        <li><a href="/login">Log In</a></li>
+                    </ul>
+                {% endif %}
+            </div>
+        </nav> -->
+
+        <main>
+            <div id="whole-charts-container"></div>
+            {% block main %}{% endblock %}
+        </main>
+
+        <footer>
+            <br>
+            Mohammad Alaa Alghamry's Project.
+        </footer>
+
+    </body>
+
+</html>

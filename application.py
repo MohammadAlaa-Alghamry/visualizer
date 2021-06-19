@@ -39,7 +39,7 @@ Session(app)
 db_conn = sqlite3.connect('finance.db')
 
 # set path to files
-path = '/data/'
+path = 'data/'
 
 @app.route("/")
 @login_required
@@ -100,7 +100,7 @@ def login():
         # Query database for username
         
         # prepare the database for query
-        conn = sqlite3.connect('image.db')
+        conn = sqlite3.connect('users.db')
         conn.row_factory = sqlite3.Row # <-- essential for the db.execute to return a Row (i.e: Dict)
         db = conn.cursor()
         
@@ -111,7 +111,7 @@ def login():
 
         # Ensure username exists and password is correct
         if len(rows) != 1 or not (rows[0]["hash"] == request.form.get("password")):
-            return render_template("login.html", msg="اسم المستخدم أو كلمة المرور غير صحيحة")
+            return render_template("login.html", msg="Invalid Username or Password")
             # return apology("invalid username and/or password", 403)
         print("Debugging:", rows[0]["hash"])
 

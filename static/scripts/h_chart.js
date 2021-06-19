@@ -78,11 +78,11 @@ function h_chart(data, chart_info)
     // ----------------------------------------
     var chart_total_debit = info_rect.append("h1")
                                     .attr("class", "chart-debit-total")
-                                    .html(format_num(0 - d3.sum(debits)) + "<span style='color: goldenrod;'> USD</span>");
+                                    .html(format_num(0 - d3.sum(debits)) + "<span style='color: rgb(30, 38, 53, 1);'> USD</span>");
 
     var chart_total_credit = info_rect.append("h1")
                                         .attr("class", "chart-credit-total")
-                                        .html(format_num(d3.sum(credits)) + "<span style='color: goldenrod;'> USD</span>");
+                                        .html(format_num(d3.sum(credits)) + "<span style='color: rgb(30, 38, 53, 1);'> USD</span>");
 
     // var name_text = info_rect.append("h1")
     //                 .attr("class", "acc_name")
@@ -255,11 +255,11 @@ function h_chart(data, chart_info)
     
     // to debit_bars:
     // --------------
-    display_bar_info_mouse(debit_bars, "rgb(219, 43, 43)", "Credit");
+    display_bar_info_mouse(debit_bars, "rgb(255, 25, 25)", "Credit");
     
     // to credit_bars:
     // ---------------
-    display_bar_info_mouse(credit_bars, "#1b61c2", "Debit");
+    display_bar_info_mouse(credit_bars, "rgb(25, 25, 255)", "Debit");
     
     // clear displayed data on "mouseout":
     // --------------------

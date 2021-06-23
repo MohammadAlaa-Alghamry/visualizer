@@ -1,12 +1,16 @@
-from python:3.8.5 
+from 	python:3.8-slim-buster 
 
-RUN python3 -m pip install --upgrade pip \
-	&& pip install -r requirements.txt
+WORKDIR /app
 
-ADD . /app
+COPY 	requirements.txt requirements.txt
 
-ENV FLASK_APP=application.py
+RUN	pip install -r requirements.txt
 
-CMD ['flask', 'run']
+ENV 	FLASK_APP=application.py
 
-EXPOSE 8080
+COPY 	. .
+
+CMD     [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
+
+
+
